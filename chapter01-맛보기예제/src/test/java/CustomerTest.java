@@ -30,6 +30,7 @@ class CustomerTest {
         customer.addRental(rental);
 
         String result = customer.statement();
+        System.out.println(result);
         assertThat(result).contains("누적 대여료: 21.0"); // 7 * 3
     }
 }
